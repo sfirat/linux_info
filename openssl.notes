@@ -37,4 +37,6 @@ Check a certificate
 Check a PKCS#12 file (.pfx or .p12)
 
     openssl pkcs12 -info -in keyStore.p12
+    
+
 
