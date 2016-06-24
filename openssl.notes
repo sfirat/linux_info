@@ -38,5 +38,9 @@ Check a PKCS#12 file (.pfx or .p12)
 
     openssl pkcs12 -info -in keyStore.p12
     
+Generate CSR (for scripts and lazy admins)    
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout example.com.key 
+-out example.com.crt -subj "/C=CA/ST=QC/L=Montreal/O=Test Organization/CN=example.com"
+    
 
 
